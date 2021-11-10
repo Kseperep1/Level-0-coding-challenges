@@ -4,12 +4,12 @@ function timeConversion(time){
 
     if (hours <= 1 && minutes == 0 || minutes > 1)
         return hours + " hour, " + minutes + " minutes";
+    else if (hours == 0 || hours > 1 && minutes <= 1)
+        return hours + " hours, " + minutes + " minute";
     else if (hours <= 1 && minutes <= 1)
         return hours + " hour, " + minutes + " minute";
-    else if (hours > 1 && minutes <= 1)
-        return hours + " hours, " + minutes + " minute";
     else if (hours > 1 && minutes > 1)
         return hours + " hours, " + minutes + " minutes";
-  }
+}
   
-  console.log(timeConversion(60));
+console.log(timeConversion(1));
