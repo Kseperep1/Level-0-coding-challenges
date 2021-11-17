@@ -1,12 +1,10 @@
 function maximum(){
-    let max = 0;
-    let curr = 0;
+    let max = arguments[0];
     let len = maxLen(arguments);
-    
+      
     for (let i = 0; i < len; i++){
-        curr = arguments[i];
-        if (curr > max)
-            max = curr;
+      if (arguments[i] >= max)
+        max = arguments[i];
     }
     return max;
 }
@@ -18,4 +16,4 @@ function maxLen(num){
     return i;
 }
 
-console.log(maximum(23,6,8,13,9,45));
+console.log(maximum(-23,-6,-8,-3,-9,-45));
