@@ -1,15 +1,22 @@
 function timeConversion(time){
-    let hours = parseInt(time / 60);
-    let minutes = parseInt(time % 60);
+  let hours = parseInt(time / 60);
+  let minutes = parseInt(time % 60);
+  let timeh = ""
+  let timem = ""
 
-    if (hours <= 1 && minutes == 0 || minutes > 1)
-        return hours + " hour, " + minutes + " minutes";
-    else if (hours == 0 || hours > 1 && minutes <= 1)
-        return hours + " hours, " + minutes + " minute";
-    else if (hours <= 1 && minutes <= 1)
-        return hours + " hour, " + minutes + " minute";
-    else if (hours > 1 && minutes > 1)
-        return hours + " hours, " + minutes + " minutes";
+  if (hours >= 0){
+    if (hours == 1)
+      timeh = `${hours} hour,`;
+    else
+      timeh = `${hours} hours,`;
+  }
+  if (minutes >= 0){
+    if (minutes == 1)
+      timem = `${minutes} minute`;
+    else
+      timem = `${minutes} minutes`;
+  }
+  return `${timeh} ${timem}`;
 }
   
-console.log(timeConversion(1));
+console.log(timeConversion(1));(1));
