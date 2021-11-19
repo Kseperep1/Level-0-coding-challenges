@@ -19,4 +19,4 @@ function timeConversion(time){
   return `${timeh} ${timem}`;
 }
   
-console.log(timeConversion(1));(1));
+console.log(timeConversion(1));
