@@ -1,11 +1,9 @@
 function commonLetters(str1, str2){
-    let lowerStr1 = str1.toLowerCase();
-    let lowerStr2 = str2.toLowerCase();
-    let arrayStr1 = [...lowerStr1];
-    let arrayStr2 = [...lowerStr2];
-    let commons = [];
+    let arrayStr1 = [...str1.toLowerCase()];
+    let arrayStr2 = [...str2.toLowerCase()];
     let len = arrayStr1.length;
     let len2 = arrayStr2.length;
+    let commons = [];
     let strChar1;
     let strChar2;
 
